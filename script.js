@@ -1,19 +1,10 @@
-const darkModeStylesheet = document.getElementById("dark-mode-stylesheet");
+const darkModeButton = document.getElementById("dark-mode-button");
+const body = document.body;
 
 function toggleDarkMode() {
-  const isEnabled = darkModeStylesheet.disabled;
-  darkModeStylesheet.disabled = !isEnabled;
-  localStorage.setItem("dark-mode", isEnabled ? "enabled" : "disabled");
+  body.classList.toggle("dark-mode");
+  const darkModeStylesheet = document.getElementById("dark-mode-stylesheet");
+  darkModeStylesheet.disabled = !body.classList.contains("dark-mode");
 }
 
-function checkDarkModePreference() {
-  const darkModePreference = localStorage.getItem("dark-mode");
-  if (darkModePreference === "enabled") {
-    darkModeStylesheet.disabled = false;
-  }
-}
-
-const darkModeButton = document.getElementById("dark-mode-button");
 darkModeButton.addEventListener("click", toggleDarkMode);
-
-checkDarkModePreference();

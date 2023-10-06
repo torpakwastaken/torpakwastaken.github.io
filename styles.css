@@ -1,24 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 
+:root {
+  --background-color: #f0f0f0;
+  --text-color: #333;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --accent-color: #007bff;
+  --dark-background-color: #333;
+  --dark-text-color: #f0f0f0;
+  --dark-box-shadow-color: rgba(255, 255, 255, 0.1);
+  --dark-accent-color: #007bff;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align card to the top */
+  align-items: flex-start;
   padding: 20px;
+}
+
+.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+  box-shadow: 0px 4px 6px var(--dark-box-shadow-color);
+}
+
+.dark-mode .container {
+  background-color: #0a0101;
 }
 
 .profile-card {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px var(--box-shadow-color);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -31,7 +54,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid #333;
+  border: 2px solid var(--text-color);
   margin: 0 auto 10px;
   overflow: hidden;
 }
@@ -46,6 +69,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
+  color: var(--text-color);
 }
 
 .nickname {
@@ -70,7 +94,7 @@ body {
 }
 
 .social-icons a {
-  color: #333;
+  color: var(--text-color);
   font-size: 24px;
   margin: 0 10px;
   text-decoration: none;
@@ -86,22 +110,8 @@ body {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px var(--box-shadow-color);
   margin-left: 20px;
-}
-
-.bio-projects a {
-  text-decoration: none;
-  color: #333;
-}
-
-.bio-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.bio-section p {
-  margin-bottom: 20px;
 }
 
 .skills {
@@ -115,7 +125,7 @@ body {
   flex: 1;
   max-width: 300px;
   background-color: #fff;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 6px var(--box-shadow-color);
   border-radius: 8px;
   text-align: center;
   padding: 20px;
@@ -130,7 +140,7 @@ body {
 
 .skill i {
   font-size: 48px;
-  color: #007bff;
+  color: var(--accent-color);
 }
 
 .skill h3 {
@@ -146,7 +156,7 @@ body {
 
 .skill-bar {
   height: 10px;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -168,15 +178,20 @@ body {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px var(--box-shadow-color);
   transform: scale(1);
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
 }
 
+.project-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 12px var(--box-shadow-color);
   background-color: #f8f8f8;
 }
 
@@ -203,7 +218,7 @@ body {
 
 .project-link {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   display: block;
 }
 
@@ -280,12 +295,11 @@ body {
   padding: 10px;
   cursor: pointer;
   position: fixed;
-  top: 20px; /* Adjust the top position as needed */
-  right: 20px; /* Adjust the right position as needed */
-  z-index: 1000; /* Ensure the button appears above other content */
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-/* Style the Font Awesome icon */
 #dark-mode-button i {
   font-size: 24px;
 }
