@@ -1,55 +1,48 @@
 body {
   background-color: #1a1a1a;
-  color: #fff; /* Default text color for most elements */
+  color: #fff;
 }
 
-/* Heading Text */
 h2 {
-  color: #fff; /* Heading text color */
+  color: #fff;
 }
 
 .name {
-  color: #0e0000; /* Heading text color */
+  color: #0e0000;
 }
 
-/* Bio Section */
 .bio-section {
   background-color: #333;
 }
 
-/* Skill Cards */
 .skill {
   background-color: #333;
   box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.1);
-  color: #fff; /* Text color for skills */
+  color: #fff;
 }
 
-/* Skill Description Text */
 .skill-description {
-  color: #ccc; /* Text color for skill descriptions */
+  color: #ccc;
 }
 
-/* Project Boxes */
 .project-box {
   background-color: #333;
   box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
-  color: #fff; /* Text color for project boxes */
+  color: #fff;
 }
 
 .project-box h3 {
-  color: #fff; /* Text color for project descriptions */
+  color: #fff;
 }
 
-/* Project Description Text */
 .project-box p {
-  color: #ccc; /* Text color for project descriptions */
+  color: #ccc;
 }
 
 .project-box:hover {
   background-color: #1a1a1a;
 }
 
-/* Dark Mode Toggle Button */
 #dark-mode-button {
   background-color: #fff;
   color: #333;
@@ -62,12 +55,11 @@ h2 {
   padding: 10px;
   cursor: pointer;
   position: fixed;
-  top: 20px; /* Adjust the top position as needed */
-  right: 20px; /* Adjust the right position as needed */
-  z-index: 1000; /* Ensure the button appears above other content */
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
-/* Style the Font Awesome icon */
 #dark-mode-button i {
   font-size: 24px;
 }
