@@ -272,3 +272,20 @@ body {
     padding: 20px;
   }
 }
+
+#dark-mode-button {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  z-index: 1000; /* Ensure the button appears above other content */
+}
+
+/* Style the Font Awesome icon */
+#dark-mode-button i {
+  font-size: 24px;
+}
