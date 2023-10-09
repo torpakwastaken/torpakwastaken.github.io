@@ -1,4 +1,4 @@
-const darkModeButton = document.getElementById("dark-mode-button");
+const darkModeButton = document.getElementById("themeToggle");
 const body = document.body;
 
 function toggleDarkMode() {
