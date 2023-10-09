@@ -70,9 +70,9 @@ nav {
 }
 
 #themeToggle {
-  border: none; /* Remove the default button border */
-  border-radius: 30%; /* Make the border round */
-  background-color: transparent; /* Make the background transparent */
+  border: none;
+  border-radius: 30%;
+  background-color: transparent;
   cursor: pointer;
   padding: 10px;
   transition: background-color 0.3s;
@@ -80,10 +80,5 @@ nav {
 }
 
 #themeToggle:hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Add a slight background color on hover */
+  background-color: rgba(0, 0, 0, 0.3);
 }
