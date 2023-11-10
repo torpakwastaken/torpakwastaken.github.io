@@ -332,3 +332,21 @@ nav {
     padding: 20px;
   }
 }
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.flag-icon {
+  width: 26px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+}

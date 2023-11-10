@@ -4,25 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-stylesheet" disabled />
+    <link
+      rel="stylesheet"
+      href="dark-mode.css"
+      id="dark-mode-stylesheet"
+      disabled
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <title>Yunus Emre Koyunlu</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <title data-translate="title">Yunus Emre Koyunlu</title>
   </head>
   <body>
-   
     <nav>
       <ul class="navbar">
         <li>
-          <a href="files/Yunus-Emre-KOYUNLU-ENGLISH-CV.pdf"><i class="fa fa-file" aria-hidden="true"></i> Resume</a>
+          <a href="files/Yunus-Emre-KOYUNLU-ENGLISH-CV.pdf"
+            ><i class="fa fa-file" aria-hidden="true"></i>
+            <span data-translate="nav_resume">Resume</span></a
+          >
         </li>
       </ul>
+      <div class="language-switcher">
+        <img class="flag-icon" src="img/gb.svg" alt="English Flag" id="en" />
+        <img class="flag-icon" src="img/tr.svg" alt="Turkish Flag" id="tr" />
+      </div>
+
       <button id="themeToggle"><i class="fas fa-moon"></i></button>
     </nav>
 
@@ -31,11 +57,12 @@
         <div class="avatar">
           <img src="https://i.postimg.cc/gkJgVP3q/80584684.jpg" alt="Avatar" />
         </div>
-        <div class="name">Y. Emre KOYUNLU</div>
-        <div class="nickname">yunusemrekoyunlu@gmail.com</div>
+        <div class="name" data-translate="name">Y. Emre KOYUNLU</div>
+        <div class="nickname" data-translate="email">
+          yunusemrekoyunlu@gmail.com
+        </div>
         <div class="location">
-          <i class="fas fa-map-marker-alt"></i>
-          Ankara, TR
+          <i class="fas fa-map-marker-alt"></i> Ankara, TR
         </div>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/yunusemrekoyunlu/"
@@ -52,14 +79,15 @@
 
       <section class="bio-section">
         <div class="bio-intro">
-          <h2>Who Am I?</h2>
-          <p>
+          <h2 data-translate="bio_title">Who Am I?</h2>
+          <p data-translate="bio_intro_1">
             Hello there! I'm Yunus Emre Koyunlu, a 27-year-old individual on an
             exciting journey to transition into the world of technology. Armed
             with a Bachelor's degree and a passion for innovation, I'm now
-            diving headfirst into the realm of web design by finishing FCC's Responsive Web Design Course.
+            diving headfirst into the realm of web design by finishing FCC's
+            Responsive Web Design Course.
           </p>
-          <p>
+          <p data-translate="bio_intro_2">
             Having gained valuable insights and experiences through my academic
             pursuits, I'm channeling my enthusiasm towards mastering AI
             technologies that have the power to reshape industries and redefine
@@ -70,55 +98,56 @@
         </div>
 
         <div class="bio-skills">
-          <h2>Skills:</h2>
-        <div class="skills">
-          <div class="skill">
-            <i class="fab fa-html5"></i>
-            <h3>HTML5</h3>
-            <div class="skill-description">
-              Proficient in creating structured web content using HTML5.
+          <h2 data-translate="skills_title">Skills:</h2>
+          <div class="skills">
+            <div class="skill">
+              <i class="fab fa-html5"></i>
+              <h3 data-translate="skill_html5">HTML5</h3>
+              <div class="skill-description" data-translate="skill_html5_desc">
+                Proficient in creating structured web content using HTML5.
+              </div>
+              <div class="skill-bar"></div>
             </div>
-            <div class="skill-bar"></div>
-          </div>
-    
-          <div class="skill">
-            <i class="fab fa-css3-alt"></i>
-            <h3>CSS3</h3>
-            <div class="skill-description">
-              Skilled in styling web pages using CSS3 and CSS frameworks.
+
+            <div class="skill">
+              <i class="fab fa-css3-alt"></i>
+              <h3 data-translate="skill_css3">CSS3</h3>
+              <div class="skill-description" data-translate="skill_css3_desc">
+                Skilled in styling web pages using CSS3 and CSS frameworks.
+              </div>
+              <div class="skill-bar"></div>
             </div>
-            <div class="skill-bar"></div>
-          </div>
-    
-          <div class="skill">
-            <i class="fab fa-js"></i>
-            <h3>JavaScript</h3>
-            <div class="skill-description">
-              Learning JavaScript and its application in web development.
+
+            <div class="skill">
+              <i class="fab fa-js"></i>
+              <h3 data-translate="skill_js">JavaScript</h3>
+              <div class="skill-description" data-translate="skill_js_desc">
+                Learning JavaScript and its application in web development.
+              </div>
+              <div class="skill-bar"></div>
             </div>
-            <div class="skill-bar"></div>
-          </div>
-    
-          <div class="skill">
-            <i class="fab fa-python"></i>
-            <h3>Python</h3>
-            <div class="skill-description">
-              Learning to automate things with Python.
+
+            <div class="skill">
+              <i class="fab fa-python"></i>
+              <h3 data-translate="skill_python">Python</h3>
+              <div class="skill-description" data-translate="skill_python_desc">
+                Learning to automate things with Python.
+              </div>
+              <div class="skill-bar"></div>
             </div>
-            <div class="skill-bar"></div>
           </div>
         </div>
 
         <div class="bio-passions">
-          <h2>Passions and Hobbies:</h2>
-          <p>
+          <h2 data-translate="passions_title">Passions and Hobbies:</h2>
+          <p data-translate="passions_content">
             When I'm not coding, I enjoy hiking in the mountains, experimenting
             with new cooking recipes, and playing guitar. I'm also an avid
             reader and love exploring new places.
           </p>
         </div>
         <div class="bio-projects">
-          <h2>My Projects:</h2>
+          <h2 data-translate="projects_title">My Projects:</h2>
           <div class="projects-grid">
             <div class="project-box">
               <a
@@ -126,8 +155,8 @@
                 target="_blank"
               >
                 <img src="img/discord-wikipedia-bot.png" alt="Project 1" />
-                <h3>Discord Bot</h3>
-                <p>
+                <h3 data-translate="project_1_title">Discord Bot</h3>
+                <p data-translate="project_1_description">
                   A Wikipedia bot that uses "!wiki" command to pull information
                   from Wikipedia.
                 </p>
@@ -137,24 +166,32 @@
             <div class="project-box">
               <a href="https://codepen.io/Rorsarch/pen/OJrWLJg" target="_blank">
                 <img src="img/product-landing-page.png" alt="Project 2" />
-                <h3>Product Landing Page</h3>
-                <p>A product landing page made for FreeCodeCamp.</p>
+                <h3 data-translate="project_2_title">Product Landing Page</h3>
+                <p data-translate="project_2_description">
+                  A product landing page made for FreeCodeCamp.
+                </p>
               </a>
             </div>
 
             <div class="project-box">
               <a href="https://codepen.io/Rorsarch/pen/ExGNqqz" target="_blank">
                 <img src="img/techincal-doc-page.png" alt="Project 3" />
-                <h3>Technical Documentation Page</h3>
-                <p>A basic technical documentation page.</p>
+                <h3 data-translate="project_3_title">
+                  Technical Documentation Page
+                </h3>
+                <p data-translate="project_3_description">
+                  A basic technical documentation page.
+                </p>
               </a>
             </div>
 
             <div class="project-box">
               <a href="https://codepen.io/Rorsarch/pen/XWoprrG" target="_blank">
                 <img src="img/survey-page.png" alt="Project 4" />
-                <h3>Survey Page</h3>
-                <p>A survey page made for FreeCodeCamp.</p>
+                <h3 data-translate="project_4_title">Survey Page</h3>
+                <p data-translate="project_4_description">
+                  A survey page made for FreeCodeCamp.
+                </p>
               </a>
             </div>
           </div>
@@ -163,5 +200,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="language.js"></script>
   </body>
 </html>
